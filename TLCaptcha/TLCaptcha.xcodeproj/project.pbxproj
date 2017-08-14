@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92F439901F41E0C400D5093F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F4398F1F41E0C400D5093F /* main.m */; };
+		92F439931F41E0C400D5093F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F439921F41E0C400D5093F /* AppDelegate.m */; };
+		92F439961F41E0C400D5093F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F439951F41E0C400D5093F /* ViewController.m */; };
+		92F439991F41E0C400D5093F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F439971F41E0C400D5093F /* Main.storyboard */; };
+		92F4399B1F41E0C400D5093F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F4399A1F41E0C400D5093F /* Assets.xcassets */; };
+		92F4399E1F41E0C400D5093F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F4399C1F41E0C400D5093F /* LaunchScreen.storyboard */; };
+		92F439A91F41E0C400D5093F /* TLCaptchaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F439A81F41E0C400D5093F /* TLCaptchaTests.m */; };
+		92F439B41F41E0C400D5093F /* TLCaptchaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F439B31F41E0C400D5093F /* TLCaptchaUITests.m */; };
+		92F439C41F41E11500D5093F /* NSString+Captcha.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F439C31F41E11500D5093F /* NSString+Captcha.m */; };
+		92F439C71F41E12F00D5093F /* TLImageCaptchaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F439C61F41E12F00D5093F /* TLImageCaptchaView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92F439A51F41E0C400D5093F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92F439831F41E0C400D5093F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92F4398A1F41E0C400D5093F;
+			remoteInfo = TLCaptcha;
+		};
+		92F439B01F41E0C400D5093F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92F439831F41E0C400D5093F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92F4398A1F41E0C400D5093F;
+			remoteInfo = TLCaptcha;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		92F4398B1F41E0C400D5093F /* TLCaptcha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLCaptcha.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F4398F1F41E0C400D5093F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		92F439911F41E0C400D5093F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		92F439921F41E0C400D5093F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		92F439941F41E0C400D5093F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		92F439951F41E0C400D5093F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		92F439981F41E0C400D5093F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		92F4399A1F41E0C400D5093F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92F4399D1F41E0C400D5093F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		92F4399F1F41E0C400D5093F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92F439A41F41E0C400D5093F /* TLCaptchaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TLCaptchaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F439A81F41E0C400D5093F /* TLCaptchaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLCaptchaTests.m; sourceTree = "<group>"; };
+		92F439AA1F41E0C400D5093F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92F439AF1F41E0C400D5093F /* TLCaptchaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TLCaptchaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F439B31F41E0C400D5093F /* TLCaptchaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLCaptchaUITests.m; sourceTree = "<group>"; };
+		92F439B51F41E0C400D5093F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92F439C21F41E11500D5093F /* NSString+Captcha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Captcha.h"; sourceTree = "<group>"; };
+		92F439C31F41E11500D5093F /* NSString+Captcha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Captcha.m"; sourceTree = "<group>"; };
+		92F439C51F41E12F00D5093F /* TLImageCaptchaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLImageCaptchaView.h; sourceTree = "<group>"; };
+		92F439C61F41E12F00D5093F /* TLImageCaptchaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLImageCaptchaView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92F439881F41E0C400D5093F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F439A11F41E0C400D5093F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F439AC1F41E0C400D5093F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92F439821F41E0C400D5093F = {
+			isa = PBXGroup;
+			children = (
+				92F4398D1F41E0C400D5093F /* TLCaptcha */,
+				92F439A71F41E0C400D5093F /* TLCaptchaTests */,
+				92F439B21F41E0C400D5093F /* TLCaptchaUITests */,
+				92F4398C1F41E0C400D5093F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92F4398C1F41E0C400D5093F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92F4398B1F41E0C400D5093F /* TLCaptcha.app */,
+				92F439A41F41E0C400D5093F /* TLCaptchaTests.xctest */,
+				92F439AF1F41E0C400D5093F /* TLCaptchaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92F4398D1F41E0C400D5093F /* TLCaptcha */ = {
+			isa = PBXGroup;
+			children = (
+				92F439911F41E0C400D5093F /* AppDelegate.h */,
+				92F439921F41E0C400D5093F /* AppDelegate.m */,
+				92F439941F41E0C400D5093F /* ViewController.h */,
+				92F439951F41E0C400D5093F /* ViewController.m */,
+				92F439C11F41E10000D5093F /* Captcha */,
+				92F439971F41E0C400D5093F /* Main.storyboard */,
+				92F4399A1F41E0C400D5093F /* Assets.xcassets */,
+				92F4399C1F41E0C400D5093F /* LaunchScreen.storyboard */,
+				92F4399F1F41E0C400D5093F /* Info.plist */,
+				92F4398E1F41E0C400D5093F /* Supporting Files */,
+			);
+			path = TLCaptcha;
+			sourceTree = "<group>";
+		};
+		92F4398E1F41E0C400D5093F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				92F4398F1F41E0C400D5093F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		92F439A71F41E0C400D5093F /* TLCaptchaTests */ = {
+			isa = PBXGroup;
+			children = (
+				92F439A81F41E0C400D5093F /* TLCaptchaTests.m */,
+				92F439AA1F41E0C400D5093F /* Info.plist */,
+			);
+			path = TLCaptchaTests;
+			sourceTree = "<group>";
+		};
+		92F439B21F41E0C400D5093F /* TLCaptchaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				92F439B31F41E0C400D5093F /* TLCaptchaUITests.m */,
+				92F439B51F41E0C400D5093F /* Info.plist */,
+			);
+			path = TLCaptchaUITests;
+			sourceTree = "<group>";
+		};
+		92F439C11F41E10000D5093F /* Captcha */ = {
+			isa = PBXGroup;
+			children = (
+				92F439C51F41E12F00D5093F /* TLImageCaptchaView.h */,
+				92F439C61F41E12F00D5093F /* TLImageCaptchaView.m */,
+				92F439C21F41E11500D5093F /* NSString+Captcha.h */,
+				92F439C31F41E11500D5093F /* NSString+Captcha.m */,
+			);
+			path = Captcha;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92F4398A1F41E0C400D5093F /* TLCaptcha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92F439B81F41E0C400D5093F /* Build configuration list for PBXNativeTarget "TLCaptcha" */;
+			buildPhases = (
+				92F439871F41E0C400D5093F /* Sources */,
+				92F439881F41E0C400D5093F /* Frameworks */,
+				92F439891F41E0C400D5093F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TLCaptcha;
+			productName = TLCaptcha;
+			productReference = 92F4398B1F41E0C400D5093F /* TLCaptcha.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92F439A31F41E0C400D5093F /* TLCaptchaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92F439BB1F41E0C400D5093F /* Build configuration list for PBXNativeTarget "TLCaptchaTests" */;
+			buildPhases = (
+				92F439A01F41E0C400D5093F /* Sources */,
+				92F439A11F41E0C400D5093F /* Frameworks */,
+				92F439A21F41E0C400D5093F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92F439A61F41E0C400D5093F /* PBXTargetDependency */,
+			);
+			name = TLCaptchaTests;
+			productName = TLCaptchaTests;
+			productReference = 92F439A41F41E0C400D5093F /* TLCaptchaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		92F439AE1F41E0C400D5093F /* TLCaptchaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92F439BE1F41E0C400D5093F /* Build configuration list for PBXNativeTarget "TLCaptchaUITests" */;
+			buildPhases = (
+				92F439AB1F41E0C400D5093F /* Sources */,
+				92F439AC1F41E0C400D5093F /* Frameworks */,
+				92F439AD1F41E0C400D5093F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92F439B11F41E0C400D5093F /* PBXTargetDependency */,
+			);
+			name = TLCaptchaUITests;
+			productName = TLCaptchaUITests;
+			productReference = 92F439AF1F41E0C400D5093F /* TLCaptchaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92F439831F41E0C400D5093F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = TLCode;
+				TargetAttributes = {
+					92F4398A1F41E0C400D5093F = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					92F439A31F41E0C400D5093F = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 92F4398A1F41E0C400D5093F;
+					};
+					92F439AE1F41E0C400D5093F = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 92F4398A1F41E0C400D5093F;
+					};
+				};
+			};
+			buildConfigurationList = 92F439861F41E0C400D5093F /* Build configuration list for PBXProject "TLCaptcha" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92F439821F41E0C400D5093F;
+			productRefGroup = 92F4398C1F41E0C400D5093F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92F4398A1F41E0C400D5093F /* TLCaptcha */,
+				92F439A31F41E0C400D5093F /* TLCaptchaTests */,
+				92F439AE1F41E0C400D5093F /* TLCaptchaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92F439891F41E0C400D5093F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F4399E1F41E0C400D5093F /* LaunchScreen.storyboard in Resources */,
+				92F4399B1F41E0C400D5093F /* Assets.xcassets in Resources */,
+				92F439991F41E0C400D5093F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F439A21F41E0C400D5093F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F439AD1F41E0C400D5093F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92F439871F41E0C400D5093F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F439C71F41E12F00D5093F /* TLImageCaptchaView.m in Sources */,
+				92F439C41F41E11500D5093F /* NSString+Captcha.m in Sources */,
+				92F439961F41E0C400D5093F /* ViewController.m in Sources */,
+				92F439931F41E0C400D5093F /* AppDelegate.m in Sources */,
+				92F439901F41E0C400D5093F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F439A01F41E0C400D5093F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F439A91F41E0C400D5093F /* TLCaptchaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F439AB1F41E0C400D5093F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F439B41F41E0C400D5093F /* TLCaptchaUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92F439A61F41E0C400D5093F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92F4398A1F41E0C400D5093F /* TLCaptcha */;
+			targetProxy = 92F439A51F41E0C400D5093F /* PBXContainerItemProxy */;
+		};
+		92F439B11F41E0C400D5093F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92F4398A1F41E0C400D5093F /* TLCaptcha */;
+			targetProxy = 92F439B01F41E0C400D5093F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		92F439971F41E0C400D5093F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92F439981F41E0C400D5093F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		92F4399C1F41E0C400D5093F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92F4399D1F41E0C400D5093F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92F439B61F41E0C400D5093F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		92F439B71F41E0C400D5093F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92F439B91F41E0C400D5093F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TLCaptcha/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TLCode.TLCaptcha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		92F439BA1F41E0C400D5093F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TLCaptcha/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TLCode.TLCaptcha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		92F439BC1F41E0C400D5093F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TLCaptchaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TLCode.TLCaptchaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TLCaptcha.app/TLCaptcha";
+			};
+			name = Debug;
+		};
+		92F439BD1F41E0C400D5093F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TLCaptchaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TLCode.TLCaptchaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TLCaptcha.app/TLCaptcha";
+			};
+			name = Release;
+		};
+		92F439BF1F41E0C400D5093F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TLCaptchaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TLCode.TLCaptchaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TLCaptcha;
+			};
+			name = Debug;
+		};
+		92F439C01F41E0C400D5093F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TLCaptchaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TLCode.TLCaptchaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TLCaptcha;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92F439861F41E0C400D5093F /* Build configuration list for PBXProject "TLCaptcha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92F439B61F41E0C400D5093F /* Debug */,
+				92F439B71F41E0C400D5093F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92F439B81F41E0C400D5093F /* Build configuration list for PBXNativeTarget "TLCaptcha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92F439B91F41E0C400D5093F /* Debug */,
+				92F439BA1F41E0C400D5093F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92F439BB1F41E0C400D5093F /* Build configuration list for PBXNativeTarget "TLCaptchaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92F439BC1F41E0C400D5093F /* Debug */,
+				92F439BD1F41E0C400D5093F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92F439BE1F41E0C400D5093F /* Build configuration list for PBXNativeTarget "TLCaptchaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92F439BF1F41E0C400D5093F /* Debug */,
+				92F439C01F41E0C400D5093F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92F439831F41E0C400D5093F /* Project object */;
+}
