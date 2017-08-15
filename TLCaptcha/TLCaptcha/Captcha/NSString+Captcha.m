@@ -11,8 +11,8 @@
 @implementation NSString (Captcha)
 
 + (instancetype)randomCaptchaStringWithLength:(NSUInteger)length {
-    char str[length];
     int i = 0;
+    char str[length];
     do {
         int path = arc4random_uniform(74) + 48;
         if ((47 < path && path < 58) ||
