@@ -15,8 +15,8 @@
 		92F4399E1F41E0C400D5093F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F4399C1F41E0C400D5093F /* LaunchScreen.storyboard */; };
 		92F439A91F41E0C400D5093F /* TLCaptchaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F439A81F41E0C400D5093F /* TLCaptchaTests.m */; };
 		92F439B41F41E0C400D5093F /* TLCaptchaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F439B31F41E0C400D5093F /* TLCaptchaUITests.m */; };
-		92F439C41F41E11500D5093F /* NSString+Captcha.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F439C31F41E11500D5093F /* NSString+Captcha.m */; };
 		92F439C71F41E12F00D5093F /* TLImageCaptchaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F439C61F41E12F00D5093F /* TLImageCaptchaView.m */; };
+		B153B2241F428BC100157163 /* NSString+Captcha.m in Sources */ = {isa = PBXBuildFile; fileRef = B153B2231F428BC100157163 /* NSString+Captcha.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +53,10 @@
 		92F439AF1F41E0C400D5093F /* TLCaptchaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TLCaptchaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F439B31F41E0C400D5093F /* TLCaptchaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLCaptchaUITests.m; sourceTree = "<group>"; };
 		92F439B51F41E0C400D5093F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92F439C21F41E11500D5093F /* NSString+Captcha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Captcha.h"; sourceTree = "<group>"; };
-		92F439C31F41E11500D5093F /* NSString+Captcha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Captcha.m"; sourceTree = "<group>"; };
 		92F439C51F41E12F00D5093F /* TLImageCaptchaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLImageCaptchaView.h; sourceTree = "<group>"; };
 		92F439C61F41E12F00D5093F /* TLImageCaptchaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLImageCaptchaView.m; sourceTree = "<group>"; };
+		B153B2221F428BC100157163 /* NSString+Captcha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Captcha.h"; sourceTree = "<group>"; };
+		B153B2231F428BC100157163 /* NSString+Captcha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Captcha.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,10 +150,10 @@
 		92F439C11F41E10000D5093F /* Captcha */ = {
 			isa = PBXGroup;
 			children = (
+				B153B2221F428BC100157163 /* NSString+Captcha.h */,
+				B153B2231F428BC100157163 /* NSString+Captcha.m */,
 				92F439C51F41E12F00D5093F /* TLImageCaptchaView.h */,
 				92F439C61F41E12F00D5093F /* TLImageCaptchaView.m */,
-				92F439C21F41E11500D5093F /* NSString+Captcha.h */,
-				92F439C31F41E11500D5093F /* NSString+Captcha.m */,
 			);
 			path = Captcha;
 			sourceTree = "<group>";
@@ -292,9 +292,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				92F439C71F41E12F00D5093F /* TLImageCaptchaView.m in Sources */,
-				92F439C41F41E11500D5093F /* NSString+Captcha.m in Sources */,
 				92F439961F41E0C400D5093F /* ViewController.m in Sources */,
 				92F439931F41E0C400D5093F /* AppDelegate.m in Sources */,
+				B153B2241F428BC100157163 /* NSString+Captcha.m in Sources */,
 				92F439901F41E0C400D5093F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

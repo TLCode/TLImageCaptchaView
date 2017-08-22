@@ -8,18 +8,27 @@
 
 #import "NSString+Captcha.h"
 
-static NSString * const DVCaptchaComponentsString = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-
 @implementation NSString (Captcha)
 
 + (instancetype)randomCaptchaStringWithLength:(NSUInteger)length {
-    NSMutableString *captcha = [NSMutableString stringWithCapacity:length];
-    for (int i = 0; i < length; i++) {
-        unichar str = [DVCaptchaComponentsString characterAtIndex:arc4random_uniform((uint32_t)DVCaptchaComponentsString.length)];
-        [captcha appendFormat:@"%C", str];
-    }
-    return [captcha copy];
+    int i = 0;
+    char str[length];
+    do {
+        int path = arc4random_uniform(74) + 48;
+        if ((47 < path && path < 58) ||
+            (64 < path && path < 91) ||
+            (96 < path && path < 123)) {
+            str[i] = path;
+            i++;
+        }
+    } while (i < length);
+    NSString *retString = [NSString stringWithCString:str encoding:NSUTF8StringEncoding];
+    
+    return retString;
+    
 }
+
+
 
 - (BOOL)isEqualToCaptcha:(NSString *)captcha {
     NSString *aString = [self lowercaseString];
