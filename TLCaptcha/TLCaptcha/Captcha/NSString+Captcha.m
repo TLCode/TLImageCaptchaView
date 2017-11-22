@@ -28,8 +28,6 @@
     
 }
 
-
-
 - (BOOL)isEqualToCaptcha:(NSString *)captcha {
     NSString *aString = [self lowercaseString];
     NSString *bString = [captcha lowercaseString];

@@ -44,6 +44,7 @@
     self.backgroundColor = randomColor();
     self.captchaString = [NSString randomCaptchaStringWithLength:6];
     UITapGestureRecognizer *tagGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(reloadCaptcha)];
+    [self reloadCaptcha];
     [self addGestureRecognizer:tagGesture];
     self.userInteractionEnabled = YES;
 }
