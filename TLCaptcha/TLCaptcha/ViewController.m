@@ -29,6 +29,7 @@
 - (void)setUpConfig {
     [self.view addSubview:({
         _captchaView = [[TLImageCaptchaView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH - 120) / 2, 200, 120, 40)];
+        _captchaView.captchaStringLenght = 4;
         _captchaView.italic = YES;
         _captchaView;
     })];

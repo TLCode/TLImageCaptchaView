@@ -10,10 +10,18 @@
 #import "NSString+Captcha.h"
 
 @interface TLImageCaptchaView : UIView
-
+/**
+ 随机生成的字符串
+ */
 @property (nonatomic, copy, readonly)               NSString    *captchaString;
-@property (nonatomic, assign, getter=isItalic)      BOOL        italic; //倾斜
-
+/**
+ 字体是否倾斜 默认 fales
+ */
+@property (nonatomic, assign, getter=isItalic)      BOOL        italic;
+/**
+ 字符串长度  默认为6
+ */
+@property (nonatomic, assign) uint                              captchaStringLenght;
 /**
  刷新验证码
  */

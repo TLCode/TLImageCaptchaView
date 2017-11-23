@@ -12,7 +12,7 @@
 
 + (instancetype)randomCaptchaStringWithLength:(NSUInteger)length {
     int i = 0;
-    char str[length];
+    char *str = (char*)malloc(length*sizeof(char));
     do {
         int path = arc4random_uniform(74) + 48;
         if ((47 < path && path < 58) ||
@@ -23,7 +23,7 @@
         }
     } while (i < length);
     NSString *retString = [NSString stringWithCString:str encoding:NSUTF8StringEncoding];
-    
+    free(str);
     return retString;
     
 }

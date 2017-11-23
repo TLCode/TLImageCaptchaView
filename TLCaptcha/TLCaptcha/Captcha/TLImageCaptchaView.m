@@ -41,20 +41,23 @@
 }
 
 - (void)setUpConfig {
-    self.backgroundColor = randomColor();
-    self.captchaString = [NSString randomCaptchaStringWithLength:6];
     UITapGestureRecognizer *tagGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(reloadCaptcha)];
-    [self reloadCaptcha];
     [self addGestureRecognizer:tagGesture];
     self.userInteractionEnabled = YES;
+    [self reloadCaptcha];
 }
 
 - (void)reloadCaptcha {
-    self.captchaString = [NSString randomCaptchaStringWithLength:6];
+    self.backgroundColor = randomColor();
+    self.captchaString = [NSString randomCaptchaStringWithLength:_captchaStringLenght > 0?_captchaStringLenght:6];
     self.backgroundColor = randomColor();
     [self setNeedsDisplay];
-}
 
+}
+- (void)setCaptchaStringLenght:(uint)captchaStringLenght{
+    _captchaStringLenght = captchaStringLenght;
+    [self reloadCaptcha];
+}
 - (void)setItalic:(BOOL)italic {
     _italic = italic;
     [self setNeedsDisplay];
@@ -75,10 +78,8 @@
     for (int i = 0; i < self.captchaString.length; i++) {
         unichar character = [self.captchaString characterAtIndex:i];
         NSString *characterString = [NSString stringWithFormat:@"%C", character];
-        
         //字号
-        CGFloat fontSize = arc4random_uniform(itemHeight * .3f) + itemHeight * .4f;
-        
+        CGFloat fontSize = arc4random_uniform(itemHeight * .3f) + itemHeight * .4f;        
         //字符属性
         NSMutableDictionary *attributes = [NSMutableDictionary dictionaryWithObject:[UIFont systemFontOfSize:fontSize] forKey:NSFontAttributeName];
         
